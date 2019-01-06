@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { RecipeViewerComponent } from './recipe-viewer/recipe-viewer.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +12,7 @@ const appRoutes: Routes = [
 
 @NgModule({
     declarations: [HomeComponent, RecipeViewerComponent],
-    imports: [RouterModule.forRoot(appRoutes)],
+    imports: [CommonModule, RouterModule.forRoot(appRoutes)],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
