@@ -1,3 +1,11 @@
-<p>
-  nav-menu works!
-</p>
+<mat-sidenav-container>
+    <mat-sidenav mode="over"
+                 [(opened)]="menuOpen"
+                 (closed)="menuClosed()">
+        <a routerLink="/" routerLinkActive="active" (click)="menuOpen=false">Home</a><br />
+        <a routerLink="/recipe-viewer" routerLinkActive="active" (click)="menuOpen=false">Recipe Viewer</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
