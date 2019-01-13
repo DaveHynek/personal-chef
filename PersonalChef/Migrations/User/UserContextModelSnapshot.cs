@@ -2,17 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PersonalChef.Data.Contexts;
 
-namespace PersonalChef.Migrations
+namespace PersonalChef.Migrations.User
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20181212035903_InitialCreate")]
-    partial class InitialCreate
+    partial class UserContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

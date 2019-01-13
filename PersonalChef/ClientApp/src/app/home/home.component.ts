@@ -10,9 +10,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class HomeComponent implements OnInit {
     config: any[];
+    config2: any[];
 
     constructor(private http: HttpClient) {
         this.http.get('api/sampledata/weatherforecasts').subscribe((data: any[]) => this.config = data);
+        this.http.get('api/units').subscribe((data: any[]) => this.config2 = data);
     }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-﻿namespace PersonalChef.Data.Models
+﻿namespace PersonalChef.Data.Models.Users
 {
     public class User
     {
