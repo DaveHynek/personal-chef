@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PersonalChef.Data.Models;
+using PersonalChef.Data.Models.Users;
 
 namespace PersonalChef.Data.Contexts
 {

@@ -1,0 +1,42 @@
+<div class="horizontal-container top-container">
+    <div class="vertical-container">
+        <button mat-stroked-button>
+            <mat-icon class="fix-icon-alignment">add</mat-icon>Add New Ingredient
+        </button>
+        <mat-form-field>
+            <input matInput placeholder="Search for Ingredients">
+            <mat-hint>Filter the ingredient catalog.</mat-hint>
+        </mat-form-field>
+        <mat-nav-list>
+            <a mat-list-item *ngFor="let link of typesOfShoes"> {{ link }} </a>
+        </mat-nav-list>
+    </div>
+    <div class="vertical-container editor-container">
+        <div class="horizontal-container header-container">
+            <div>Unnamed Ingredient</div>
+            <div class="horizontal-container">
+                <button mat-stroked-button>
+                    <mat-icon class="fix-icon-alignment">done</mat-icon>Save
+                </button>
+                <button mat-stroked-button class="default-margin">
+                    <mat-icon class="fix-icon-alignment">close</mat-icon>Cancel
+                </button>
+            </div>
+        </div>
+        <mat-form-field>
+            <input matInput placeholder="Name" maxlength="128">
+            <mat-hint>Name of the ingredient.</mat-hint>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput placeholder="Description" rows="3" cols="50" maxlength="512"></textarea>
+            <mat-hint>Description of the ingredient.</mat-hint>
+        </mat-form-field>
+        <div class="horizontal-container">
+            <mat-form-field>
+                <input matInput placeholder="Image URL">
+                <mat-hint>URL to an image for the ingredient.</mat-hint>
+            </mat-form-field>
+            <button mat-stroked-button class="update-button">Update</button>
+        </div>
+    </div>
+</div>
